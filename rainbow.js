@@ -23,9 +23,9 @@ var frequency = .3;
 var i=0;
 function colorShift(){
 
-     red   = Math.sin(frequency*i + 0) * 127 + 128;
-     green = Math.sin(frequency*i + 2) * 127 + 128;
-     blue  = Math.sin(frequency*i + 4) * 127 + 128;
+     var red   = Math.sin(frequency*i + 0) * 127 + 128;
+     var green = Math.sin(frequency*i + 2) * 127 + 128;
+     var blue  = Math.sin(frequency*i + 4) * 127 + 128;
      ++i;
      if(i>=1000000){
        i=0;
