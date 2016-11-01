@@ -6,9 +6,6 @@ function changeColorOfLinks(color){
   if(linkCount>=links.length){
     linkCount=0;
   }
-  // for(var i=0;i<links.length;i++){
-  //     links[i].style.color = color;
-  // }
 }
 function RGB2Color(r,g,b)
  {
@@ -31,8 +28,6 @@ function colorShift(){
        i=0;
      }
      changeColorOfLinks(RGB2Color(red,green,blue));
-    //  document.write( '<font color="' + RGB2Color(red,green,blue) + '">&#9608;</font>');
-
 }
 
 setInterval(function(){colorShift();}, 5);
